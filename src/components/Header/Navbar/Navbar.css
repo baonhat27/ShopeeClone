@@ -1,0 +1,113 @@
+.h__navbar{
+    display: flex;
+    justify-content: space-between;
+    height: 26px;
+}
+.navbar__list{
+    list-style: none;
+    display: flex;
+    padding-left: 0px;
+    margin: 8px 0px 0 0 ;
+}
+.navbar__item{
+    font-size: 13px;
+    color: #fff;
+    font-weight: 400;
+    margin: 0 10px;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+}
+.navbar__item--bold{
+    font-weight: 500;
+}
+.navbar__item--separate{
+    border-right: 1px solid #fb9086;
+    padding: 0px 16px 0px 0px; 
+}
+.navbar__item--header{
+    text-decoration-line: none;
+    color: #fff
+}
+.navbar__item--link:hover .navbar__item--header {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.navbar__icon{
+    font-size: 16px;
+    margin: 0 6px;
+}
+.navbar__icon:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+/* Notify */
+.notify{
+    position: absolute;  
+    top: 150%;  
+    width: 400px;
+    background-color: #fff;
+    right: 0px;
+    border: 1px solid #d3d3d3;
+    display: none;
+    z-index: 10;
+}
+.notify__header{
+    height: 40px;
+}
+.notify__header h3{
+    color: #666;
+    margin: 0 0 0 12px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 40px;
+}
+.notify__list{
+    padding-left: 0px;
+}
+.notify__item{
+    background-color: rgb(255,242,238);
+}
+.notify__item:hover{
+    background-color: #f7f7f7;
+}
+.notify__item--view{
+    background-color: #fff;
+}
+.notify__item--link{
+    display: flex;
+    padding: 12px;
+    
+}
+.notify__item--img{
+    width: 50px;    
+    object-fit: contain;
+}
+.notify__info{
+    margin-left: 12px;
+}
+.notify__name{
+    color: rgb(0, 0, 0);
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+}
+.notify__description{
+    color: #666;
+    font-size: 12px;
+    line-height: 26px;
+}
+.navbar__item--notify:hover .notify{
+    display: block;
+}
+.notify__header::before{
+    content: "";
+    border-width: 20px 30px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+    position: absolute;
+    right: 12px;
+    top: -30px;
+
+}

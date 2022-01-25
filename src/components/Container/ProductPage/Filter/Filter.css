@@ -1,0 +1,61 @@
+.filter__label{
+    display: flex;
+    align-items: center;
+    padding: 12px 22px;
+    background-color: #f1ebeb;
+    border-radius: 3px;
+    color: #555555;
+    font-size: 14px;
+    width: 100%;
+}
+.filter__btn{
+    min-width: 90px;
+    height: 30px;
+    border-radius: 2px;
+    border:none;
+    font-size: 16px;
+    padding: 0 12px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 26px;
+    background-color: #fff;
+    margin: 0px 12px;
+}
+.filer__select{
+    position: relative;
+    min-width: 200px;
+    height: 30px;
+    border-radius: 2px;
+    border:none;
+    font-size: 16px;
+    padding: 0 12px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 26px;
+    background-color: #fff;
+    justify-items: flex-end;
+}
+.filter__btn--active{
+    background-color: #fb5533;
+    color: #fff;
+}
+.filer__select__list{
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    right: 0;
+    top: 110%;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 26%);
+    border-radius: 2px;
+    padding: 0 12px;
+    display: none;
+}
+.down__btn:hover{
+    cursor: pointer;
+    color: #fb5533 ;
+}
+.filer__select:hover .filer__select__list{
+    display: block;
+}
